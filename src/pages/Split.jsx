@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react'
+import AdBanner from "../components/AdBanner";
+
 import { PDFDocument } from 'pdf-lib'
 import FileUpload from '../components/FileUpload'
 import PDFPreviewGrid from '../components/PDFPreviewGrid'
@@ -67,6 +69,10 @@ export default function Split({setHint}){
         <label>To: <input defaultValue={pages.length||1} ref={toRef} className='ml-2 w-20 border rounded px-2 py-1' /></label>
         <button onClick={splitRange} disabled={processing} className='px-3 py-1 bg-white text-gray-800 rounded shadow hover:scale-[1.01] ml-2'>{processing?'Processing...':'Extract'}</button>
       </div>}
+          <div className="merge-section">
+        {/* your PDF merge code here */}
+        <AdBanner />  {/* ✅ Works now */}
+      </div>
     </div>
   )
 }

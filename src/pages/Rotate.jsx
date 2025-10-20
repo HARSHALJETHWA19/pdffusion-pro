@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import AdBanner from "../components/AdBanner";
+
 import ToolsLayout from "../components/ToolsLayout";
 import { PDFDocument, degrees } from "pdf-lib";
 
@@ -45,7 +47,7 @@ export default function Rotate() {
   };
 
   return (
-    <ToolsLayout title="Rotate PDF" description="Rotate your PDF pages instantly.">
+    <><ToolsLayout title="Rotate PDF" description="Rotate your PDF pages instantly.">
       <input type="file" accept="application/pdf" onChange={handleFileChange} className="block w-full text-sm text-gray-700" />
 
       {previewUrl && (
@@ -82,6 +84,9 @@ export default function Rotate() {
           Download Rotated PDF
         </a>
       )}
-    </ToolsLayout>
+    </ToolsLayout><div className="merge-section">
+        {/* your PDF merge code here */}
+        <AdBanner />  {/* ✅ Works now */}
+      </div></>
   );
 }

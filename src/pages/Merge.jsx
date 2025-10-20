@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import AdBanner from "../components/AdBanner";
+
 import { PDFDocument } from "pdf-lib";
 // import {
 //   DragDropContext,
@@ -121,6 +123,11 @@ const Merge = () => {
           </button>
         </div>
       )}
+
+    <div className="merge-section">
+        {/* your PDF merge code here */}
+        <AdBanner />  {/* ✅ Works now */}
+      </div>
     </div>
   );
 };

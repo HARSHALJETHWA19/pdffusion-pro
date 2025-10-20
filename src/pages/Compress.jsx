@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AdBanner from "../components/AdBanner";
 import ToolsLayout from "../components/ToolsLayout";
 import { PDFDocument } from "pdf-lib";
 
@@ -44,13 +45,12 @@ export default function Compress() {
   };
 
   return (
-    <ToolsLayout title="Compress PDF" description="Reduce PDF size efficiently.">
+    <><ToolsLayout title="Compress PDF" description="Reduce PDF size efficiently.">
       <input
         type="file"
         accept="application/pdf"
         onChange={handleFileChange}
-        className="block w-full text-sm text-gray-700"
-      />
+        className="block w-full text-sm text-gray-700" />
 
       <div className="flex items-center justify-between mt-4">
         <label className="text-gray-600">Compression Level</label>
@@ -61,8 +61,7 @@ export default function Compress() {
           step="0.1"
           value={compressionLevel}
           onChange={(e) => setCompressionLevel(parseFloat(e.target.value))}
-          className="w-1/2"
-        />
+          className="w-1/2" />
         <span className="text-gray-700 text-sm">{compressionLevel}</span>
       </div>
 
@@ -83,6 +82,10 @@ export default function Compress() {
           Download Compressed PDF
         </a>
       )}
-    </ToolsLayout>
+    </ToolsLayout><div className="merge-section">
+        {/* your PDF merge code here */}
+        <AdBanner />  {/* ✅ Works now */}
+      </div></>
+    
   );
 }
