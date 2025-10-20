@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Gradient for header */
+.header-grad {
+  @apply bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-900 dark:to-purple-900;
+}
+
+/* Make dark backgrounds look darker */
+html.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.btn {
+  @apply bg-blue-500 text-white px-4 py-2 rounded;
+}

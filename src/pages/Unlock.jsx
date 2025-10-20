@@ -1,0 +1,1 @@
+export default function Unlock(){return (<div className='card p-6 rounded shadow'><h2 className='text-xl font-semibold mb-2'>Unlock</h2><p className='text-sm text-slate-500'>Coming soon</p></div>)}
