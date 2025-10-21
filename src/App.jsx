@@ -55,7 +55,7 @@ export default function App(){
         <div className='flex items-center gap-3'>
           <div className='bg-white/20 rounded-full p-2'><strong>PP</strong></div>
           <div>
-            <div className='font-bold text-lg'>PaperPal</div>
+            <div className='font-bold text-lg'>UrPDFConvert</div>
             <div className='text-xs opacity-90'>Friendly PDF toolkit — privacy-first</div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function App(){
         </Routes>
       </main>
 
-      <footer className='max-w-5xl mx-auto p-4 text-sm text-slate-500'>PaperPal • Privacy-first, no login • Built with ❤️</footer>
+      <footer className='max-w-5xl mx-auto p-4 text-sm text-slate-500'>UrPDFConvert • Privacy-first, no login • Built with ❤️</footer>
     </div>
   )
 }

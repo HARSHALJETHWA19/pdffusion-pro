@@ -1,6 +1,6 @@
-# PaperPal — PDF Toolkit (Final)
+# UrPDFConvert — PDF Toolkit (Final)
 
-This package contains the full PaperPal project (blue-purple gradient, dark mode, hints, history, preview & reorder, and Download All functionality).
+This package contains the full UrPDFConvert project (blue-purple gradient, dark mode, hints, history, preview & reorder, and Download All functionality).
 
 ## Quick start (Windows)
 
